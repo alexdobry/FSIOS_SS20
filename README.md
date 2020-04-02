@@ -1,2 +1,6 @@
-# FSIOS_SS20
-WPF "Full Stack iOS Entwicklung mit Swift" im Medieninformatik Master an der TH-Köln im SS 20
+# FSIOS im SS 20
+
+| Termin | Datum | Themen |
+| :---: | :---: | ------ |
+| 1 | 02.04.20 | KickOff, Einleitung und Organisatorisches |
+| 2 | 15.04.20 | ViewController, Swift und Anwendungslogik |
