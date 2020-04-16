@@ -4,3 +4,5 @@
 | :---: | :---: | ------ |
 | 1 | 02.04.20 | KickOff, Einleitung und Organisatorisches |
 | 2 | 16.04.20 | MVC, Swift und Anwendungslogik |
+| 3 | 23.04.20 | Autolayout, Views und Animationen |
+
