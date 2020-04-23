@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Matching Card View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MatchingCardViewController" customModule="MatchingCardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Lvy-H8-j98">
+                                <rect key="frame" x="16" y="60" width="382" height="596"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zha-ap-hNj">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="33.5"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="roA-5S-946">
+                                        <rect key="frame" x="0.0" y="41.5" width="382" height="516.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FDn-Ec-XMn">
+                                                <rect key="frame" x="0.0" y="0.0" width="382" height="167"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNE-Zz-8Wj" customClass="CardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="89.5" height="167"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="NNE-Zz-8Wj" secondAttribute="height" multiplier="22:41" id="TSf-II-op8"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zyw-RS-aUa" customClass="CardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="97.5" y="0.0" width="89.5" height="167"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkD-NW-tqP" customClass="CardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="195" y="0.0" width="89.5" height="167"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUj-U6-K2U" customClass="CardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="292.5" y="0.0" width="89.5" height="167"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="t8f-ak-RWG">
+                                                <rect key="frame" x="0.0" y="175" width="382" height="166.5"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPd-B2-0hb" customClass="CardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="89.5" height="166.5"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXE-7v-R2t" customClass="CardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="97.5" y="0.0" width="89.5" height="166.5"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJm-dM-1ex" customClass="CardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="195" y="0.0" width="89.5" height="166.5"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gk5-1R-9qX" customClass="CardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="292.5" y="0.0" width="89.5" height="166.5"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rec-AJ-Pdl">
+                                                <rect key="frame" x="0.0" y="349.5" width="382" height="167"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6O4-kB-563" customClass="CardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="89.5" height="167"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlE-j8-bFg" customClass="CardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="97.5" y="0.0" width="89.5" height="167"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Gc-H0-3Xh" customClass="CardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="195" y="0.0" width="89.5" height="167"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u0Y-br-xEL" customClass="CardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="292.5" y="0.0" width="89.5" height="167"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLC-nV-Dv7">
+                                        <rect key="frame" x="0.0" y="566" width="382" height="30"/>
+                                        <state key="normal" title="Play Again"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lvy-H8-j98" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Og1-rB-wIY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lvy-H8-j98" secondAttribute="bottom" constant="16" id="UFJ-vX-dOx"/>
+                            <constraint firstItem="Lvy-H8-j98" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="cGo-dq-eky"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lvy-H8-j98" secondAttribute="trailing" constant="16" id="iAU-ZJ-INt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="Zha-ap-hNj" id="X1V-3X-LYX"/>
+                        <outletCollection property="cardViews" destination="6O4-kB-563" collectionClass="NSMutableArray" id="fgZ-c3-ef3"/>
+                        <outletCollection property="cardViews" destination="Gk5-1R-9qX" collectionClass="NSMutableArray" id="dFA-LX-CTh"/>
+                        <outletCollection property="cardViews" destination="KkD-NW-tqP" collectionClass="NSMutableArray" id="Jf7-9X-mqs"/>
+                        <outletCollection property="cardViews" destination="NNE-Zz-8Wj" collectionClass="NSMutableArray" id="q34-do-YWp"/>
+                        <outletCollection property="cardViews" destination="Zyw-RS-aUa" collectionClass="NSMutableArray" id="5A5-R7-2je"/>
+                        <outletCollection property="cardViews" destination="UPd-B2-0hb" collectionClass="NSMutableArray" id="9Jl-yQ-Knm"/>
+                        <outletCollection property="cardViews" destination="KXE-7v-R2t" collectionClass="NSMutableArray" id="sSw-eF-2J5"/>
+                        <outletCollection property="cardViews" destination="u0Y-br-xEL" collectionClass="NSMutableArray" id="DcL-RL-CqJ"/>
+                        <outletCollection property="cardViews" destination="DJm-dM-1ex" collectionClass="NSMutableArray" id="mMb-zI-qkb"/>
+                        <outletCollection property="cardViews" destination="JUj-U6-K2U" collectionClass="NSMutableArray" id="1wW-qy-LTe"/>
+                        <outletCollection property="cardViews" destination="XlE-j8-bFg" collectionClass="NSMutableArray" id="aVm-4L-fX1"/>
+                        <outletCollection property="cardViews" destination="0Gc-H0-3Xh" collectionClass="NSMutableArray" id="pJE-cO-T9p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-201" y="58"/>
+        </scene>
+    </scenes>
+</document>
