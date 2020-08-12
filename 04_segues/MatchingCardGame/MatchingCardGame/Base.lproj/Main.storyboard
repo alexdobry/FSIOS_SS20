@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2L1-EK-YTf">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Matching Card Game-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MatchingCardViewController" customModule="MatchingCardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Lvy-H8-j98">
+                                <rect key="frame" x="16" y="104" width="343" height="541.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zha-ap-hNj">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="33.666666666666664"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="roA-5S-946">
+                                        <rect key="frame" x="0.0" y="41.666666666666629" width="343" height="462"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FDn-Ec-XMn">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="148.66666666666666"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNE-Zz-8Wj" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="148.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="NNE-Zz-8Wj" secondAttribute="height" multiplier="22:41" id="TSf-II-op8"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zyw-RS-aUa" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="148.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KkD-NW-tqP" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="148.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUj-U6-K2U" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="148.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="t8f-ak-RWG">
+                                                <rect key="frame" x="0.0" y="156.66666666666669" width="343" height="148.66666666666669"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPd-B2-0hb" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="148.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXE-7v-R2t" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="148.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DJm-dM-1ex" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="148.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gk5-1R-9qX" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="148.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rec-AJ-Pdl">
+                                                <rect key="frame" x="0.0" y="313.33333333333337" width="343" height="148.66666666666663"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6O4-kB-563" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="148.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XlE-j8-bFg" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="148.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Gc-H0-3Xh" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="148.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u0Y-br-xEL" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                        <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="148.66666666666666"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLC-nV-Dv7">
+                                        <rect key="frame" x="0.0" y="511.66666666666663" width="343" height="30"/>
+                                        <state key="normal" title="Play Again"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lvy-H8-j98" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Og1-rB-wIY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Lvy-H8-j98" secondAttribute="bottom" constant="16" id="UFJ-vX-dOx"/>
+                            <constraint firstItem="Lvy-H8-j98" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="cGo-dq-eky"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lvy-H8-j98" secondAttribute="trailing" constant="16" id="iAU-ZJ-INt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Matching Card Game" id="02I-7X-D25">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" image="settings" id="Mbj-6f-0iK">
+                            <connections>
+                                <segue destination="ZX4-53-Umn" kind="presentation" identifier="Settings" id="Ss0-Py-hcI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="scoreLabel" destination="Zha-ap-hNj" id="X1V-3X-LYX"/>
+                        <outletCollection property="cardViews" destination="6O4-kB-563" collectionClass="NSMutableArray" id="fgZ-c3-ef3"/>
+                        <outletCollection property="cardViews" destination="Gk5-1R-9qX" collectionClass="NSMutableArray" id="dFA-LX-CTh"/>
+                        <outletCollection property="cardViews" destination="KkD-NW-tqP" collectionClass="NSMutableArray" id="Jf7-9X-mqs"/>
+                        <outletCollection property="cardViews" destination="NNE-Zz-8Wj" collectionClass="NSMutableArray" id="q34-do-YWp"/>
+                        <outletCollection property="cardViews" destination="Zyw-RS-aUa" collectionClass="NSMutableArray" id="5A5-R7-2je"/>
+                        <outletCollection property="cardViews" destination="UPd-B2-0hb" collectionClass="NSMutableArray" id="9Jl-yQ-Knm"/>
+                        <outletCollection property="cardViews" destination="KXE-7v-R2t" collectionClass="NSMutableArray" id="sSw-eF-2J5"/>
+                        <outletCollection property="cardViews" destination="u0Y-br-xEL" collectionClass="NSMutableArray" id="DcL-RL-CqJ"/>
+                        <outletCollection property="cardViews" destination="DJm-dM-1ex" collectionClass="NSMutableArray" id="mMb-zI-qkb"/>
+                        <outletCollection property="cardViews" destination="JUj-U6-K2U" collectionClass="NSMutableArray" id="1wW-qy-LTe"/>
+                        <outletCollection property="cardViews" destination="XlE-j8-bFg" collectionClass="NSMutableArray" id="aVm-4L-fX1"/>
+                        <outletCollection property="cardViews" destination="0Gc-H0-3Xh" collectionClass="NSMutableArray" id="pJE-cO-T9p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318.84057971014494" y="67.633928571428569"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="XUI-y1-FDf">
+            <objects>
+                <viewController id="B5z-9r-Djz" customClass="SettingsViewController" customModule="MatchingCardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VoZ-BZ-JaX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Wub-fq-MJs">
+                                <rect key="frame" x="16" y="72" width="343" height="636"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="T6d-Gb-03X">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="99.666666666666671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ty0-cv-9Eh">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s4Y-Kv-Dbk">
+                                                <rect key="frame" x="0.0" y="28.333333333333329" width="343" height="31.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Increase Score by X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1H-ay-L8d">
+                                                        <rect key="frame" x="0.0" y="0.0" width="241" height="31.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q36-eC-Cc0">
+                                                        <rect key="frame" x="249" y="0.0" width="94" height="31.333333333333332"/>
+                                                        <connections>
+                                                            <action selector="stepperDidChange:" destination="B5z-9r-Djz" eventType="valueChanged" id="zhq-3F-Lop"/>
+                                                        </connections>
+                                                    </stepper>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="bzr-QY-eNu">
+                                                <rect key="frame" x="0.0" y="67.666666666666657" width="343" height="32"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decrease Score by X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTs-i5-C6n">
+                                                        <rect key="frame" x="0.0" y="0.0" width="241" height="32"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="mqf-n6-2Lz">
+                                                        <rect key="frame" x="249" y="0.0" width="94" height="32"/>
+                                                        <connections>
+                                                            <action selector="stepperDidChange:" destination="B5z-9r-Djz" eventType="valueChanged" id="NBx-Z6-D8F"/>
+                                                        </connections>
+                                                    </stepper>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vm8-oA-KLv">
+                                        <rect key="frame" x="0.0" y="131.66666666666666" width="343" height="504.33333333333337"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Appearance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6m-Nq-MWZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="20.333333333333332"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vfT-zh-OxO">
+                                                <rect key="frame" x="0.0" y="28.333333333333343" width="343" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background Color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUs-sk-DU5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="137.66666666666666" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="hex color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UaI-8I-MxR">
+                                                        <rect key="frame" x="145.66666666666663" y="0.0" width="197.33333333333337" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="c10-OT-PZo">
+                                                <rect key="frame" x="0.0" y="70.333333333333343" width="343" height="34"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line Width" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvN-Sw-Zw0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="line width" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QD4-Sm-1Mc">
+                                                        <rect key="frame" x="90" y="0.0" width="253" height="34"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                        <connections>
+                                                            <action selector="lineWidthDidChange:" destination="B5z-9r-Djz" eventType="editingDidEnd" id="33C-x4-zqd"/>
+                                                        </connections>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OTQ-nu-tAf">
+                                                <rect key="frame" x="0.0" y="112" width="343" height="392"/>
+                                                <connections>
+                                                    <segue destination="EWB-en-0OT" kind="embed" identifier="Embed" id="7Bc-Nq-cO4"/>
+                                                </connections>
+                                            </containerView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xBL-ko-x7W" firstAttribute="bottom" secondItem="Wub-fq-MJs" secondAttribute="bottom" constant="16" id="Q3H-cw-nOg"/>
+                            <constraint firstItem="xBL-ko-x7W" firstAttribute="leading" secondItem="Wub-fq-MJs" secondAttribute="leading" constant="-16" id="Xcg-a5-ghL"/>
+                            <constraint firstItem="xBL-ko-x7W" firstAttribute="trailing" secondItem="Wub-fq-MJs" secondAttribute="trailing" constant="16" id="bEW-Dd-hj4"/>
+                            <constraint firstItem="Wub-fq-MJs" firstAttribute="top" secondItem="xBL-ko-x7W" secondAttribute="top" constant="15.999999999999986" id="enS-Wt-h2y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xBL-ko-x7W"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Settings" id="506-cH-R5a">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="JtP-Re-ETS">
+                            <connections>
+                                <segue destination="yfH-jJ-oi5" kind="unwind" identifier="Unwind" unwindAction="unwindToMatchingCardViewController:" id="sYt-bh-qfZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="decreaseLabel" destination="fTs-i5-C6n" id="5GN-Gh-iWJ"/>
+                        <outlet property="decreaseStepper" destination="mqf-n6-2Lz" id="2Ya-tg-cSo"/>
+                        <outlet property="increaseLabel" destination="D1H-ay-L8d" id="SVm-zg-J5l"/>
+                        <outlet property="increaseStepper" destination="Q36-eC-Cc0" id="sOT-Gj-6TG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeM-Jl-910" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="yfH-jJ-oi5" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2034.4000000000001" y="-553.44827586206895"/>
+        </scene>
+        <!--Matching Card View Controller-->
+        <scene sceneID="2Pl-iB-hF7">
+            <objects>
+                <viewController id="EWB-en-0OT" customClass="MatchingCardViewController" customModule="MatchingCardGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pgD-xb-mer">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="392"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WRh-zc-56g">
+                                <rect key="frame" x="0.0" y="0.0" width="343" height="392"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="QbS-zb-3Uz">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="148.66666666666666"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsb-D4-wC6" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="148.66666666666666"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="hsb-D4-wC6" secondAttribute="height" multiplier="22:41" id="cGk-e0-h5V"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f38-A7-cu9" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="148.66666666666666"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Re9-zU-z3Q" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="148.66666666666666"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jdb-mv-JwS" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="148.66666666666666"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CKu-66-IPA">
+                                        <rect key="frame" x="0.0" y="156.66666666666663" width="343" height="177.33333333333337"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7MB-5s-pYQ" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="177.33333333333334"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Se2-Up-FJk" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="177.33333333333334"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WYh-Ja-OtL" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="177.33333333333334"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j46-4m-hrA" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="177.33333333333334"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="88Z-q4-e8k">
+                                        <rect key="frame" x="0.0" y="342" width="343" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FtA-uX-cKc" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rWU-zY-0S4" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8uX-uL-Zjc" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T1P-Kt-EaO" customClass="DrawingCardView" customModule="MatchingCardGame" customModuleProvider="target">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="50"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7MB-5s-pYQ" firstAttribute="width" secondItem="hsb-D4-wC6" secondAttribute="width" id="TW5-58-KCv"/>
+                                    <constraint firstItem="FtA-uX-cKc" firstAttribute="width" secondItem="hsb-D4-wC6" secondAttribute="width" id="UcZ-Gv-ImL"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WRh-zc-56g" firstAttribute="trailing" secondItem="pgD-xb-mer" secondAttribute="trailing" id="1fN-gg-Bwc"/>
+                            <constraint firstAttribute="top" secondItem="WRh-zc-56g" secondAttribute="top" id="9ew-qh-zTg"/>
+                            <constraint firstItem="WRh-zc-56g" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="pgD-xb-mer" secondAttribute="bottom" id="h1y-zD-HjT"/>
+                            <constraint firstItem="WRh-zc-56g" firstAttribute="leading" secondItem="pgD-xb-mer" secondAttribute="leading" id="urE-Jg-B56"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i88-Qh-UbI"/>
+                    </view>
+                    <connections>
+                        <outletCollection property="cardViews" destination="hsb-D4-wC6" collectionClass="NSMutableArray" id="uK3-z1-K5i"/>
+                        <outletCollection property="cardViews" destination="f38-A7-cu9" collectionClass="NSMutableArray" id="jfB-Os-h0J"/>
+                        <outletCollection property="cardViews" destination="Re9-zU-z3Q" collectionClass="NSMutableArray" id="1Z1-F3-kN6"/>
+                        <outletCollection property="cardViews" destination="Jdb-mv-JwS" collectionClass="NSMutableArray" id="Vis-4s-rQD"/>
+                        <outletCollection property="cardViews" destination="Se2-Up-FJk" collectionClass="NSMutableArray" id="ujr-IR-PVQ"/>
+                        <outletCollection property="cardViews" destination="WYh-Ja-OtL" collectionClass="NSMutableArray" id="JKj-ZY-E8k"/>
+                        <outletCollection property="cardViews" destination="j46-4m-hrA" collectionClass="NSMutableArray" id="VqN-ZE-2D0"/>
+                        <outletCollection property="cardViews" destination="FtA-uX-cKc" collectionClass="NSMutableArray" id="1nL-mb-7zF"/>
+                        <outletCollection property="cardViews" destination="rWU-zY-0S4" collectionClass="NSMutableArray" id="2v2-o5-dtM"/>
+                        <outletCollection property="cardViews" destination="8uX-uL-Zjc" collectionClass="NSMutableArray" id="izn-x7-UBE"/>
+                        <outletCollection property="cardViews" destination="T1P-Kt-EaO" collectionClass="NSMutableArray" id="ifQ-wp-Lkw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="90n-oq-bK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2791" y="-470"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="C7i-tl-jOz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2L1-EK-YTf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ebl-ds-uSr">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="11y-RC-X7U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W6o-NM-P7G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-591.304347826087" y="67.633928571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4YA-sx-aKn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZX4-53-Umn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Qg-Ec-RHI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B5z-9r-Djz" kind="relationship" relationship="rootViewController" id="zt9-Fj-v1l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qXM-AI-O99" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092" y="-553.44827586206895"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="settings" width="25" height="25"/>
+    </resources>
+</document>
